@@ -1,0 +1,14 @@
+services:
+  db :
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - data-volume:/var/lib/postgresql
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: task-ms
+volumes:
+  data-volume:
