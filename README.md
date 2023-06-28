@@ -4,7 +4,7 @@
 
 Before running the app datasource image available through docker-compose
 
-shell
+
 docker compose up
 
 
